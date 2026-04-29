@@ -66,6 +66,7 @@ Assets/
    PlayerHealth.cs
    PlayerShooting.cs
   Systems/EnemySpawner.cs
+  UI/BombCutIn.cs
 Temp/obj/Assembly-CSharp/.NETStandard,Version=v2.1.AssemblyAttributes.cs
 
 [metadataReferences]

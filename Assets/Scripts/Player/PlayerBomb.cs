@@ -11,6 +11,8 @@ public class PlayerBomb : MonoBehaviour
     private PlayerHealth health;
     private bool bombUsedThisPress;
 
+    public BombCutIn bombCutIn;
+
     void Start()
     {
         currentBombs = maxBombs;
@@ -54,6 +56,8 @@ public class PlayerBomb : MonoBehaviour
         currentBombs--;
 
         Debug.Log("Bomba usada! Restantes: " + currentBombs);
+
+        bombCutIn.Play();
 
         ClearBullets();
 
