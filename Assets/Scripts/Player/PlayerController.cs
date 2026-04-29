@@ -16,4 +16,13 @@ public class PlayerController : MonoBehaviour
         Vector2 movement = input.MoveInput;
         transform.Translate(movement * speed * Time.deltaTime);
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("EnemyBullet"))
+        {
+            Debug.Log("Colidiu com: " + other.name);
+            Destroy(other.gameObject);
+        }
+    }
 }
