@@ -61,7 +61,9 @@ Assets/
    Enemy.cs
    EnemyShooting.cs
   Player/
+   PlayerBomb.cs
    PlayerController.cs
+   PlayerHealth.cs
    PlayerShooting.cs
   Systems/EnemySpawner.cs
 Temp/obj/Assembly-CSharp/.NETStandard,Version=v2.1.AssemblyAttributes.cs

@@ -5,10 +5,12 @@ public class PlayerController : MonoBehaviour
     public float speed = 5f;
 
     private InputHandler input;
+    private PlayerHealth health;
 
     void Awake()
     {
         input = GetComponent<InputHandler>();
+        health = GetComponent<PlayerHealth>();
     }
 
     void Update()
@@ -21,7 +23,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("EnemyBullet"))
         {
-            Debug.Log("Colidiu com: " + other.name);
+            health.TakeHit();
             Destroy(other.gameObject);
         }
     }
